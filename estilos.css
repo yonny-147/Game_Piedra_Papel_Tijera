@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+body{
+    width: 100%;
+    height: 96vh;
+    margin: auto;
+    font-family: 'Pixelify Sans', sans-serif;
+    background-image: url(img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 1px 10px 20px #000000;
+    transition: all 500ms;
+}
+.tituloh1{
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 10%;
+}
+.tituloh2{
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 30%;
+}
+h3{
+    display: none;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+
+}
+.jugador1{
+    top: 26%;
+    left: 10%;
+}
+.jugadorPc{
+    top: 26%;
+    left: 80%;
+}
+.imgs{
+    cursor: pointer;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    transform: rotate(90deg);
+    bottom: 100px;
+    box-shadow: 1px 1px 10px #ccc;
+}
+.imgIzq{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    transform: rotate(180deg);
+    left: 0;
+    top: 30%;
+}
+.imgDer{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+.piedra, .papel, .tijera{
+    display: block;
+    transition: all 300ms;
+}
+.piedra{
+    left: 10%;
+}
+.papel{
+    left: 33%;
+}
+.tijera{
+    right: 10%;
+}
+.piedraIzq, .papelIzq, .tijeraIzq {
+    transition: all 100ms;
+    display: none;
+    left: -30%;
+} 
+.piedraDer, .papelDer, .tijeraDer{
+    transition: all 100ms;
+    display: none;
+    right: -30%;
+}
+.imgs:hover{
+    margin-bottom: 10px;
+}
+.reiniciar{
+    display: none;
+    position: absolute;
+    width: 400px;
+    top: 65%;
+    left: 35%;
+    margin: auto;
+    border: none;
+    background-color: rgb(191, 97, 2);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.reiniciar:hover{
+    cursor: pointer;
+    background-color: rgb(25, 0, 117);
+}
